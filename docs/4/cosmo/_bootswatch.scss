@@ -4,10 +4,49 @@
 
 // Variables ===================================================================
 
-$web-font-path: "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" !default;
+$web-font-path: "https://fonts.googleapis.com/css?family=Montserrat:300,400,700" !default;
 @import url($web-font-path);
 
+$radius: 1rem;
+$border-radius: 1rem;
+
 // Navbar ======================================================================
+
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-dark.bg-primary .navbar-nav .show > .nav-link,
+.navbar-dark.bg-primary .navbar-nav .active > .nav-link,
+.navbar-dark.bg-primary .navbar-nav .nav-link.show,
+.navbar-dark.bg-primary .navbar-nav .nav-link.active {
+  color: $white;
+  background-color: $dark;
+}
+
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: $white;
+  background-color: $primary;
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+  color: $white;
+  background-color: $primary;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-top:    1.5rem;
+  padding-bottom: 1.5rem;
+  padding-right: 0.75rem;
+  padding-left:  0.75rem;
+}
 
 // Buttons =====================================================================
 
@@ -36,3 +75,15 @@ body {
 }
 
 // Containers ==================================================================
+
+body {
+  background: repeating-linear-gradient(135deg, rgb(210, 210, 210), rgb(224, 224, 224) 1px, rgb(210, 210, 210) 4px, rgb(224, 224, 224) 1px);
+}
+
+.card {
+  box-shadow: 0 0 15px $gray-700;
+}
+
+.dropdown-menu {
+  box-shadow: 0 0 15px $gray-700;
+}

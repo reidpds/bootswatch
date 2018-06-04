@@ -16,7 +16,8 @@
     "postcss": "postcss --no-map --use autoprefixer --config build/js/postcss.js --replace dist/*/bootstrap.css"
   },
   "dependencies": {
-    "bootstrap": "^4.1.1"
+    "bootstrap": "^4.1.1",
+    "npm": "^6.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
