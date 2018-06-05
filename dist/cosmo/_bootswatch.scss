@@ -164,9 +164,13 @@ body {
 }
 
 .card {
-  box-shadow: 0 0 15px $gray-700;
+  box-shadow: 0 0 15px $gray-500;
 }
 
 .dropdown-menu {
-  box-shadow: 0 0 15px $gray-700;
+  box-shadow: 0 0 15px $gray-500;
+}
+
+.alert {
+  border: 1px solid currentColor;
 }
