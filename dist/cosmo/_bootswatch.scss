@@ -108,8 +108,33 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid #000000;
+  border-right: 4px solid transparent;
+  border-bottom: 0 dotted;
+  border-left: 4px solid transparent;
+  content: "";
+}
+
+.caret.left {
+  transform: rotate(90deg);
+}
+
+.caret.up {
+  transform: rotate(180deg);
+}
+
+.caret.right {
+  transform: rotate(270deg);
+}
+
 .dropdown-toggle::after,
-.caret::after {
+.chevron {
   border-style: solid;
   border-width: 0.12em 0.12em 0 0;
   border-color: currentColor;
@@ -124,18 +149,20 @@ body {
   width: 0.45em;
 }
 
-.caret.right:after {
+.chevron.right {
   left: 0;
+  top: 0.55em;
   transform: rotate(45deg);
 }
 
-.caret.up:after {
-  top: 0.15em;
+.chevron.up {
+  top: 0.65em;
   transform: rotate(-45deg);
 }
 
-.caret.left:after {
+.chevron.left {
   left: 0.25em;
+  top: 0.55em;
   transform: rotate(-135deg);
 }
 
