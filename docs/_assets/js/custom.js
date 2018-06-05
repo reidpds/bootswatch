@@ -30,8 +30,13 @@
 
   function cleanSource(html) {
     html = html.replace(/×/g, "&times;")
+               .replace(/©/g, "&copy;")
+               .replace(/®/g, "&reg;")
                .replace(/«/g, "&laquo;")
                .replace(/»/g, "&raquo;")
+               .replace(/…/g, "&hellip;")
+               .replace(/↑/g, "&uarr;")
+               .replace(/↓/g, "&darr;")
                .replace(/←/g, "&larr;")
                .replace(/→/g, "&rarr;");
 

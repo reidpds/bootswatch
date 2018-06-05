@@ -9665,3 +9665,7 @@ body {
 .alert {
   border: 1px solid currentColor;
 }
+
+pre {
+  padding: 1em;
+}
