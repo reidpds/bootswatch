@@ -139,6 +139,36 @@ body {
   transform: rotate(-135deg);
 }
 
+.hamburger-menu,
+.hamburger-menu:after,
+.hamburger-menu:before {
+  width: 20px;
+  height: 3px;
+}
+
+.hamburger-menu {
+  position: relative;
+  transform: translateY(7px);
+  background: currentColor;
+  transition: all 0ms 300ms;
+}
+
+.hamburger-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 7px;
+  background: currentColor;
+}
+
+.hamburger-menu:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  background: currentColor;
+}
+
 // Tables ======================================================================
 
 // Forms =======================================================================
