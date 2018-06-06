@@ -9461,6 +9461,10 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: #28221e;
 }
 
+.navbar-dark a.nav-link:not([href]):not([tabindex]) {
+  color: #fff;
+}
+
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
@@ -9591,6 +9595,10 @@ body {
   width: 0.45em;
 }
 
+.dropdown-toggle.no-dropdown-decoration::after {
+  display: none;
+}
+
 .chevron.right {
   left: 0;
   top: 0.55em;
@@ -9643,6 +9651,15 @@ body {
   background: currentColor;
 }
 
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #b9c2ca;
+}
+
+a {
+  cursor: pointer;
+}
+
 .progress .progress-bar {
   font-size: 8px;
   line-height: 8px;
@@ -9652,14 +9669,9 @@ body {
   background: repeating-linear-gradient(135deg, #d2d2d2, #e0e0e0 1px, #d2d2d2 4px, #e0e0e0 1px);
 }
 
-.card {
-  -webkit-box-shadow: 0 0 15px #adb5bd;
-          box-shadow: 0 0 15px #adb5bd;
-}
-
-.dropdown-menu {
-  -webkit-box-shadow: 0 0 15px #adb5bd;
-          box-shadow: 0 0 15px #adb5bd;
+.card, .dropdown-menu {
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 .alert {

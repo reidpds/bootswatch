@@ -35,6 +35,9 @@ $text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05) !default;
   background-color: $dark;
 }
 
+.navbar-dark a.nav-link:not([href]):not([tabindex]) {
+  color: $white;
+}
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
@@ -149,6 +152,10 @@ body {
   width: 0.45em;
 }
 
+.dropdown-toggle.no-dropdown-decoration::after {
+  display: none;
+}
+
 .chevron.right {
   left: 0;
   top: 0.55em;
@@ -198,9 +205,18 @@ body {
 
 // Tables ======================================================================
 
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #b9c2ca;
+}
+
 // Forms =======================================================================
 
 // Navs ========================================================================
+
+a {
+  cursor: pointer;
+}
 
 // Indicators ==================================================================
 
@@ -220,12 +236,8 @@ body {
   background: repeating-linear-gradient(135deg, rgb(210, 210, 210), rgb(224, 224, 224) 1px, rgb(210, 210, 210) 4px, rgb(224, 224, 224) 1px);
 }
 
-.card {
-  box-shadow: 0 0 15px $gray-500;
-}
-
-.dropdown-menu {
-  box-shadow: 0 0 15px $gray-500;
+.card, .dropdown-menu {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 .alert {
