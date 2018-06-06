@@ -9674,6 +9674,11 @@ body {
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
+.card-flat-top {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
 .alert {
   border: 1px solid currentColor;
 }
