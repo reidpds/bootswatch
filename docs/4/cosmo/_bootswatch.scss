@@ -36,8 +36,13 @@ $text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05) !default;
 }
 
 .navbar-dark a.nav-link:not([href]):not([tabindex]) {
-  color: $white;
+  color: rgba(255, 255, 255, 0.5);
 }
+.navbar-dark a.nav-link:not([href]):not([tabindex]):focus,
+.navbar-dark a.nav-link:not([href]):not([tabindex]):hover {
+  color: rgba(255, 255, 255, 1);
+}
+
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
@@ -105,10 +110,20 @@ $text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05) !default;
   @include btn-shadow($dark);
 }
 
+.input-group > .input-group-append:not(:last-child) > .btn.btn-right-radius,
+.btn-right-radius {
+  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+}
+
 // Typography ==================================================================
 
 body {
   -webkit-font-smoothing: antialiased;
+}
+
+b, strong {
+  font-weight: 700;
 }
 
 .caret {
@@ -150,10 +165,6 @@ body {
   transform: rotate(135deg);
   vertical-align: top;
   width: 0.45em;
-}
-
-.dropdown-toggle.no-dropdown-decoration::after {
-  display: none;
 }
 
 .chevron.right {
@@ -207,7 +218,11 @@ body {
 
 .table-bordered th,
 .table-bordered td {
-  border: 1px solid #b9c2ca;
+  border: 1px solid $gray-400;
+}
+
+.table thead tr {
+  background-color: $gray-200;
 }
 
 // Forms =======================================================================
@@ -236,6 +251,10 @@ body {
   background: repeating-linear-gradient(135deg, rgb(210, 210, 210), rgb(224, 224, 224) 1px, rgb(210, 210, 210) 4px, rgb(224, 224, 224) 1px);
 }
 
+.dropdown-toggle.no-dropdown-decoration::after {
+  display: none;
+}
+
 .card, .dropdown-menu {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
@@ -251,4 +270,15 @@ body {
 
 pre {
   padding: 1em;
+}
+
+.dropdown-header {
+  color: $info;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.footer,
+.footer .navbar {
+  background-color: $gray-200;
 }
