@@ -11,7 +11,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
+@import url("https://cloud.typography.com/6816756/6796972/css/fonts.css");
 :root {
   --blue: #0092FF;
   --indigo: #6610f2;
@@ -39,7 +39,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Montserrat", "Segoe UI", Calibri, Candara, Arial, sans-serif;
+  --font-family-sans-serif: "Gotham SSm A", "Gotham SSm B", "Segoe UI", Calibri, Candara, Arial, sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -69,8 +69,8 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Montserrat", "Segoe UI", Calibri, Candara, Arial, sans-serif;
-  font-size: 0.9375rem;
+  font-family: "Gotham SSm A", "Gotham SSm B", "Segoe UI", Calibri, Candara, Arial, sans-serif;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
   color: #28221e;
@@ -379,31 +379,31 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-  font-size: 2.34375rem;
+  font-size: 2.1875rem;
 }
 
 h2, .h2 {
-  font-size: 1.875rem;
+  font-size: 1.75rem;
 }
 
 h3, .h3 {
-  font-size: 1.640625rem;
+  font-size: 1.53125rem;
 }
 
 h4, .h4 {
-  font-size: 1.40625rem;
+  font-size: 1.3125rem;
 }
 
 h5, .h5 {
-  font-size: 1.171875rem;
+  font-size: 1.09375rem;
 }
 
 h6, .h6 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
 }
 
 .lead {
-  font-size: 1.171875rem;
+  font-size: 1.09375rem;
   font-weight: 300;
 }
 
@@ -475,7 +475,7 @@ mark,
 
 .blockquote {
   margin-bottom: 1rem;
-  font-size: 1.171875rem;
+  font-size: 1.09375rem;
 }
 
 .blockquote-footer {
@@ -1969,7 +1969,7 @@ pre code {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   line-height: 1.5;
   color: #697077;
   background-color: #fff;
@@ -2029,7 +2029,7 @@ pre code {
 }
 
 select.form-control:not([size]):not([multiple]) {
-  height: calc(2.15625rem + 2px);
+  height: calc(2.0625rem + 2px);
 }
 
 select.form-control:focus::-ms-value {
@@ -2054,14 +2054,14 @@ select.form-control:focus::-ms-value {
 .col-form-label-lg {
   padding-top: calc(0.5rem + 1px);
   padding-bottom: calc(0.5rem + 1px);
-  font-size: 1.171875rem;
+  font-size: 1.09375rem;
   line-height: 1.5;
 }
 
 .col-form-label-sm {
   padding-top: calc(0.25rem + 1px);
   padding-bottom: calc(0.25rem + 1px);
-  font-size: 0.8203125rem;
+  font-size: 0.765625rem;
   line-height: 1.5;
 }
 
@@ -2097,7 +2097,7 @@ select.form-control:focus::-ms-value {
 .input-group-sm > .input-group-prepend > .btn,
 .input-group-sm > .input-group-append > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.8203125rem;
+  font-size: 0.765625rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
@@ -2107,7 +2107,7 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 .input-group-sm > .input-group-append > select.input-group-text:not([size]):not([multiple]),
 .input-group-sm > .input-group-prepend > select.btn:not([size]):not([multiple]),
 .input-group-sm > .input-group-append > select.btn:not([size]):not([multiple]) {
-  height: calc(1.73046875rem + 2px);
+  height: calc(1.6484375rem + 2px);
 }
 
 .form-control-lg, .input-group-lg > .form-control,
@@ -2116,7 +2116,7 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 .input-group-lg > .input-group-prepend > .btn,
 .input-group-lg > .input-group-append > .btn {
   padding: 0.5rem 1rem;
-  font-size: 1.171875rem;
+  font-size: 1.09375rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
@@ -2126,7 +2126,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .input-group-lg > .input-group-append > select.input-group-text:not([size]):not([multiple]),
 .input-group-lg > .input-group-prepend > select.btn:not([size]):not([multiple]),
 .input-group-lg > .input-group-append > select.btn:not([size]):not([multiple]) {
-  height: calc(2.7578125rem + 2px);
+  height: calc(2.640625rem + 2px);
 }
 
 .form-group {
@@ -2506,7 +2506,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
           user-select: none;
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 0.2rem;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -3152,14 +3152,14 @@ fieldset:disabled a.btn {
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.5rem 1rem;
-  font-size: 1.171875rem;
+  font-size: 1.09375rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.8203125rem;
+  font-size: 0.765625rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
@@ -3248,7 +3248,7 @@ input[type="button"].btn-block {
   min-width: 10rem;
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   color: #28221e;
   text-align: left;
   list-style: none;
@@ -3407,7 +3407,7 @@ input[type="button"].btn-block {
   display: block;
   padding: 0.5rem 1.5rem;
   margin-bottom: 0;
-  font-size: 0.8203125rem;
+  font-size: 0.765625rem;
   color: #868e96;
   white-space: nowrap;
 }
@@ -3681,7 +3681,7 @@ input[type="button"].btn-block {
           align-items: center;
   padding: 0.375rem 0.75rem;
   margin-bottom: 0;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
   color: #697077;
@@ -3841,7 +3841,7 @@ input[type="button"].btn-block {
 .custom-select {
   display: inline-block;
   width: 100%;
-  height: calc(2.15625rem + 2px);
+  height: calc(2.0625rem + 2px);
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
   line-height: 1.5;
   color: #697077;
@@ -3883,14 +3883,14 @@ input[type="button"].btn-block {
 }
 
 .custom-select-sm {
-  height: calc(1.73046875rem + 2px);
+  height: calc(1.6484375rem + 2px);
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   font-size: 75%;
 }
 
 .custom-select-lg {
-  height: calc(2.7578125rem + 2px);
+  height: calc(2.640625rem + 2px);
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   font-size: 125%;
@@ -3900,7 +3900,7 @@ input[type="button"].btn-block {
   position: relative;
   display: inline-block;
   width: 100%;
-  height: calc(2.15625rem + 2px);
+  height: calc(2.0625rem + 2px);
   margin-bottom: 0;
 }
 
@@ -3908,7 +3908,7 @@ input[type="button"].btn-block {
   position: relative;
   z-index: 2;
   width: 100%;
-  height: calc(2.15625rem + 2px);
+  height: calc(2.0625rem + 2px);
   margin: 0;
   opacity: 0;
 }
@@ -3933,7 +3933,7 @@ input[type="button"].btn-block {
   right: 0;
   left: 0;
   z-index: 1;
-  height: calc(2.15625rem + 2px);
+  height: calc(2.0625rem + 2px);
   padding: 0.375rem 0.75rem;
   line-height: 1.5;
   color: #697077;
@@ -3949,7 +3949,7 @@ input[type="button"].btn-block {
   bottom: 0;
   z-index: 3;
   display: block;
-  height: 2.15625rem;
+  height: 2.0625rem;
   padding: 0.375rem 0.75rem;
   line-height: 1.5;
   color: #697077;
@@ -4203,10 +4203,10 @@ input[type="button"].btn-block {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.32421875rem;
-  padding-bottom: 0.32421875rem;
+  padding-top: 0.3359375rem;
+  padding-bottom: 0.3359375rem;
   margin-right: 1rem;
-  font-size: 1.171875rem;
+  font-size: 1.09375rem;
   line-height: inherit;
   white-space: nowrap;
 }
@@ -4257,7 +4257,7 @@ input[type="button"].btn-block {
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
-  font-size: 1.171875rem;
+  font-size: 1.09375rem;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
@@ -5004,7 +5004,7 @@ input[type="button"].btn-block {
 
 .pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
-  font-size: 1.171875rem;
+  font-size: 1.09375rem;
   line-height: 1.5;
 }
 
@@ -5020,7 +5020,7 @@ input[type="button"].btn-block {
 
 .pagination-sm .page-link {
   padding: 0.25rem 0.5rem;
-  font-size: 0.8203125rem;
+  font-size: 0.765625rem;
   line-height: 1.5;
 }
 
@@ -5185,7 +5185,7 @@ input[type="button"].btn-block {
 }
 
 .alert-dismissible {
-  padding-right: 3.90625rem;
+  padding-right: 3.8125rem;
 }
 
 .alert-dismissible .close {
@@ -5332,7 +5332,7 @@ input[type="button"].btn-block {
   display: flex;
   height: 0.5rem;
   overflow: hidden;
-  font-size: 0.703125rem;
+  font-size: 0.65625rem;
   background-color: #e9ecef;
   border-radius: 0.2rem;
 }
@@ -5598,7 +5598,7 @@ input[type="button"].btn-block {
 
 .close {
   float: right;
-  font-size: 1.40625rem;
+  font-size: 1.3125rem;
   font-weight: 700;
   line-height: 1;
   color: #000;
@@ -5806,7 +5806,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Montserrat", "Segoe UI", Calibri, Candara, Arial, sans-serif;
+  font-family: "Gotham SSm A", "Gotham SSm B", "Segoe UI", Calibri, Candara, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5820,7 +5820,7 @@ button.close {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.8203125rem;
+  font-size: 0.765625rem;
   word-wrap: break-word;
   opacity: 0;
 }
@@ -5919,7 +5919,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Montserrat", "Segoe UI", Calibri, Candara, Arial, sans-serif;
+  font-family: "Gotham SSm A", "Gotham SSm B", "Segoe UI", Calibri, Candara, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5933,7 +5933,7 @@ button.close {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.8203125rem;
+  font-size: 0.765625rem;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: padding-box;
@@ -6081,7 +6081,7 @@ button.close {
 .popover-header {
   padding: 0.5rem 0.75rem;
   margin-bottom: 0;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   color: inherit;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
@@ -9557,12 +9557,16 @@ a.text-dark:hover, a.text-dark:focus {
   border-bottom-right-radius: 0.2rem;
 }
 
+.btn .badge {
+  position: absolute;
+  margin-top: -0.3125rem;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
 }
 
-b,
-strong {
+b, strong, .strong {
   font-weight: 700;
 }
 
@@ -9672,6 +9676,22 @@ strong {
   background-color: #e9ecef;
 }
 
+.selectize-control.multi .selectize-input > div {
+  color: #fff;
+  background-color: #0092FF;
+}
+
+.selectize-control.multi .selectize-input > div.active {
+  color: #fff;
+  background-color: #0075cc;
+  font-weight: 400;
+}
+
+.selectize-control.plugin-remove_button [data-value] .remove {
+  padding-top: 3px;
+  border-left-color: #33a8ff;
+}
+
 a {
   cursor: pointer;
 }
@@ -9716,4 +9736,183 @@ pre {
 .footer,
 .footer .navbar {
   background-color: #e9ecef;
+}
+
+.wrap-full {
+  padding-right: 1%;
+  padding-left: 1%;
+}
+
+.wrap-xl {
+  max-width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.wrap-lg {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.wrap-md {
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.wrap-sm {
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.wrap-xs {
+  max-width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bottom-pad-no {
+  padding-bottom: 0;
+}
+
+.bottom-pad-sm {
+  padding-bottom: 5px;
+}
+
+.bottom-pad-md {
+  padding-bottom: 10px;
+}
+
+.bottom-pad-lg {
+  padding-bottom: 20px;
+}
+
+.bottom-pad-xl {
+  padding-bottom: 40px;
+}
+
+.top-pad-no {
+  padding-top: 0;
+}
+
+.top-pad-sm {
+  padding-top: 5px;
+}
+
+.top-pad-md {
+  padding-top: 10px;
+}
+
+.top-pad-lg {
+  padding-top: 20px;
+}
+
+.top-pad-xl {
+  padding-top: 40px;
+}
+
+.right-pad-sm {
+  padding-right: 5px;
+}
+
+.right-pad-md {
+  padding-right: 10px;
+}
+
+.right-pad-lg {
+  padding-right: 20px;
+}
+
+.right-pad-xl {
+  padding-right: 40px;
+}
+
+.left-pad-sm {
+  padding-left: 5px;
+}
+
+.left-pad-md {
+  padding-left: 10px;
+}
+
+.left-pad-lg {
+  padding-left: 20px;
+}
+
+.left-pad-xl {
+  padding-left: 40px;
+}
+
+.bottom-no {
+  margin-bottom: 0;
+}
+
+.bottom-sm {
+  margin-bottom: 5px;
+}
+
+.bottom-md {
+  margin-bottom: 10px;
+}
+
+.bottom-lg {
+  margin-bottom: 20px;
+}
+
+.bottom-xl {
+  margin-bottom: 40px;
+}
+
+.top-no {
+  margin-top: 0;
+}
+
+.top-sm {
+  margin-top: 5px;
+}
+
+.top-md {
+  margin-top: 10px;
+}
+
+.top-lg {
+  margin-top: 20px;
+}
+
+.top-xl {
+  margin-top: 40px;
+}
+
+.right-sm {
+  margin-right: 5px;
+}
+
+.right-md {
+  margin-right: 10px;
+}
+
+.right-lg {
+  margin-right: 20px;
+}
+
+.right-xl {
+  margin-right: 40px;
+}
+
+.left-sm {
+  margin-left: 5px;
+}
+
+.left-md {
+  margin-left: 10px;
+}
+
+.left-lg {
+  margin-left: 20px;
+}
+
+.left-xl {
+  margin-left: 40px;
 }

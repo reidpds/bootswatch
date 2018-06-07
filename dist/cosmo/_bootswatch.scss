@@ -4,7 +4,7 @@
 
 // Variables ===================================================================
 
-$web-font-path: "https://fonts.googleapis.com/css?family=Montserrat:300,400,700" !default;
+$web-font-path: "https://cloud.typography.com/6816756/6796972/css/fonts.css" !default;
 @import url($web-font-path);
 
 $radius: 1rem;
@@ -116,13 +116,18 @@ $text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05) !default;
   border-bottom-right-radius: 0.2rem;
 }
 
+.btn .badge {
+  position: absolute;
+  margin-top: -0.3125rem;
+}
+
 // Typography ==================================================================
 
 body {
   -webkit-font-smoothing: antialiased;
 }
 
-b, strong {
+b, strong, .strong {
   font-weight: 700;
 }
 
@@ -227,6 +232,22 @@ b, strong {
 
 // Forms =======================================================================
 
+.selectize-control.multi .selectize-input > div {
+  color: $white;
+  background-color: $primary;
+}
+
+.selectize-control.multi .selectize-input > div.active {
+  color: $white;
+  background-color: darken($primary, 10%);
+  font-weight: 400;
+}
+
+.selectize-control.plugin-remove_button [data-value] .remove {
+  padding-top: 3px;
+  border-left-color: lighten($primary, 10%);
+}
+
 // Navs ========================================================================
 
 a {
@@ -281,4 +302,146 @@ pre {
 .footer,
 .footer .navbar {
   background-color: $gray-200;
+}
+
+.wrap-full {
+  padding-right: 1%;
+  padding-left: 1%;
+}
+.wrap-xl {
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.wrap-lg {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.wrap-md {
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.wrap-sm {
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.wrap-xs {
+    max-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+// Utilities ===================================================================
+
+.bottom-pad-no {
+  padding-bottom: 0;
+}
+.bottom-pad-sm {
+  padding-bottom: 5px;
+}
+.bottom-pad-md {
+  padding-bottom: 10px;
+}
+.bottom-pad-lg {
+  padding-bottom: 20px;
+}
+.bottom-pad-xl {
+  padding-bottom: 40px;
+}
+.top-pad-no {
+  padding-top: 0;
+}
+.top-pad-sm {
+  padding-top: 5px;
+}
+.top-pad-md {
+  padding-top: 10px;
+}
+.top-pad-lg {
+  padding-top: 20px;
+}
+.top-pad-xl {
+  padding-top: 40px;
+}
+.right-pad-sm {
+  padding-right: 5px;
+}
+.right-pad-md {
+  padding-right: 10px;
+}
+.right-pad-lg {
+  padding-right: 20px;
+}
+.right-pad-xl {
+  padding-right: 40px;
+}
+.left-pad-sm {
+  padding-left: 5px;
+}
+.left-pad-md {
+  padding-left: 10px;
+}
+.left-pad-lg {
+  padding-left: 20px;
+}
+.left-pad-xl {
+  padding-left: 40px;
+}
+
+.bottom-no {
+  margin-bottom: 0;
+}
+.bottom-sm {
+  margin-bottom: 5px;
+}
+.bottom-md {
+  margin-bottom: 10px;
+}
+.bottom-lg {
+  margin-bottom: 20px;
+}
+.bottom-xl {
+  margin-bottom: 40px;
+}
+.top-no {
+  margin-top: 0;
+}
+.top-sm {
+  margin-top: 5px;
+}
+.top-md {
+  margin-top: 10px;
+}
+.top-lg {
+  margin-top: 20px;
+}
+.top-xl {
+  margin-top: 40px;
+}
+.right-sm {
+  margin-right: 5px;
+}
+.right-md {
+  margin-right: 10px;
+}
+.right-lg {
+  margin-right: 20px;
+}
+.right-xl {
+  margin-right: 40px;
+}
+.left-sm {
+  margin-left: 5px;
+}
+.left-md {
+  margin-left: 10px;
+}
+.left-lg {
+  margin-left: 20px;
+}
+.left-xl {
+  margin-left: 40px;
 }
