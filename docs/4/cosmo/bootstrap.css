@@ -11,7 +11,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://cloud.typography.com/6816756/6796972/css/fonts.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
 :root {
   --blue: #0092FF;
   --indigo: #6610f2;
@@ -39,7 +39,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Gotham SSm A", "Gotham SSm B", "Segoe UI", Calibri, Candara, Arial, sans-serif;
+  --font-family-sans-serif: "Montserrat", "Segoe UI", Calibri, Candara, Arial, sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -69,7 +69,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Gotham SSm A", "Gotham SSm B", "Segoe UI", Calibri, Candara, Arial, sans-serif;
+  font-family: "Montserrat", "Segoe UI", Calibri, Candara, Arial, sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
@@ -5806,7 +5806,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Gotham SSm A", "Gotham SSm B", "Segoe UI", Calibri, Candara, Arial, sans-serif;
+  font-family: "Montserrat", "Segoe UI", Calibri, Candara, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5919,7 +5919,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Gotham SSm A", "Gotham SSm B", "Segoe UI", Calibri, Candara, Arial, sans-serif;
+  font-family: "Montserrat", "Segoe UI", Calibri, Candara, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
