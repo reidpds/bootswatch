@@ -9779,6 +9779,10 @@ pre {
   margin-left: auto;
 }
 
+.full-width {
+  width: 100%;
+}
+
 .bottom-pad-no {
   padding-bottom: 0;
 }
