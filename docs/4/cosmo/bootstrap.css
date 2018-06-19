@@ -9665,6 +9665,14 @@ b, strong, .strong {
   background: currentColor;
 }
 
+pre, code {
+  background-color: #fff;
+}
+
+pre {
+  color: #697077;
+}
+
 .table-bordered th,
 .table-bordered td {
   border: 1px solid #ced4da;

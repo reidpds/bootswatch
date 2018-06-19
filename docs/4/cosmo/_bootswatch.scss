@@ -217,6 +217,15 @@ b, strong, .strong {
   background: currentColor;
 }
 
+// Code blocks =================================================================
+
+pre, code {
+  background-color: $white;
+}
+pre {
+  color: $gray-700;
+}
+
 // Tables ======================================================================
 
 .table-bordered th,
