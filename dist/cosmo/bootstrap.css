@@ -9685,6 +9685,7 @@ pre {
 .selectize-control.multi .selectize-input > div {
   color: #fff;
   background-color: #0092FF;
+  padding-left: 8px;
 }
 
 .selectize-control.multi .selectize-input > div.active {
