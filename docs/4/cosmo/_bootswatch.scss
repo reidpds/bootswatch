@@ -256,6 +256,15 @@ pre {
   border-left-color: lighten($primary, 10%);
 }
 
+.selectize-dropdown-content .option {
+  cursor: pointer;
+}
+
+.selectize-dropdown-content .optgroup-header {
+  font-weight: 700;
+  font-size: 120%;
+}
+
 // Navs ========================================================================
 
 a {

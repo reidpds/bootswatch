@@ -9699,6 +9699,15 @@ pre {
   border-left-color: #33a8ff;
 }
 
+.selectize-dropdown-content .option {
+  cursor: pointer;
+}
+
+.selectize-dropdown-content .optgroup-header {
+  font-weight: 700;
+  font-size: 120%;
+}
+
 a {
   cursor: pointer;
 }
