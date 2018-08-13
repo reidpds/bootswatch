@@ -9744,8 +9744,7 @@ pre {
 }
 
 .dropdown-header {
-  color: #054c5e;
-  font-size: 1.2rem;
+  font-size: 120%;
   font-weight: 700;
 }
 
