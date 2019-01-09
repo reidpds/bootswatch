@@ -275,6 +275,36 @@ pre {
   content: " required";
 }
 
+// Notice-only form elements that cannot be edited manually, only removed
+.notice-only-filter-control {
+  display: table;
+  background-color: $primary;
+  border-radius: calc(0.25rem - 1px);
+  color: $white;
+  position: relative;
+}
+.notice-only-filter-control span.notice-only-filter-value {
+  display: inline-block;
+  padding: 1px 8px;
+  margin-right: calc(1em + 3px);
+  max-width: calc(100% - 1em - 2px);
+  word-break: break-all;
+}
+.notice-only-filter-control a.notice-only-filter-remove {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: inherit;
+  font-weight: bold;
+  border-left: 1px solid lighten($primary, 10%);
+  padding: 2px 4px;
+}
+.notice-only-filter-control a.notice-only-filter-remove:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+}
+
 // Navs ========================================================================
 
 a {
