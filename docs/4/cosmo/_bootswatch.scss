@@ -265,6 +265,16 @@ pre {
   font-size: 120%;
 }
 
+/* Make form asterisk red and show "required" on hover. */
+.required-symbol {
+  color: #e51c23;
+  padding-left: 3px;
+  cursor: default;
+}
+.required-symbol:hover:after {
+  content: " required";
+}
+
 // Navs ========================================================================
 
 a {
