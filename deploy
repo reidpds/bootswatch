@@ -1,6 +1,6 @@
 #!/bin/bash
 
-grunt swatch:cosmo
+./node_modules/grunt/bin/grunt swatch:cosmo
 
 # See http://docs.aws.amazon.com/cli/latest/reference/s3/sync.html
 aws s3 sync . s3://${AWS_BUCKET}/${1} --cache-control max-age=604800 --acl public-read \
