@@ -1,4 +1,4 @@
-// Cosmo 4.1.1
+// Cosmo 4.5.0
 // Bootswatch
 
 
@@ -317,6 +317,7 @@ a {
 
 .progress {
   @include box-shadow(none);
+
   .progress-bar {
     font-size: 8px;
     line-height: 8px;

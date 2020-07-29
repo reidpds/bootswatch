@@ -84,16 +84,7 @@
               <a class="nav-link" href="../help/">Help</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="http://blog.bootswatch.com">Blog</a>
-            </li>
-          </ul>
-
-          <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="http://builtwithbootstrap.com/" target="_blank">Built With Bootstrap</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://wrapbootstrap.com/?ref=bsw" target="_blank">WrapBootstrap</a>
+              <a class="nav-link" href="https://blog.bootswatch.com">Blog</a>
             </li>
           </ul>
 
@@ -105,9 +96,44 @@
       <div class="row">
         <div class="col-lg-9">
             <h1 id="quickstart">Quick Start</h1>
-            <p>Using the themes is as easy as downloading a CSS file and replacing the one that comes with <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>.</p>
+            <h4>Pre-Compiled CSS</h4>
+            <p>Using the themes is as easy as downloading a CSS file and replacing the one that comes with <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>.</p>
+            <h4>Package</h4>
             <p>You can install as a package via npm with the command <code>npm install bootswatch</code>.</p>
+            <p>
+            <h5>React Users (create-react-app, or similar bundler)</h5>
+
+            <p>Modern JavaScript bundlers (webpack, parcel, rollup) support importing CSS from JS files. This can make it easier to deploy various 1st- and 3rd-party assets predictably.</p>
+            <p>Note: <i>There are tradeoffs to the following method, research your tooling before deploying to production.</i></p>
+            <p>Before continuing, ensure you've run npm install bootswatch in your local project folder. (Use either npm or yarn.)</p>
+            <p>Add the following import to your top-level <code>index.js</code> (or <code>App.js</code>) file. Add it before any other .css imports.</p>
+            <pre>
+import "bootswatch/dist/[theme]/bootstrap.min.css"; 
+// TODO: Note: Replace ^[theme]^ (examples: darkly, slate, cosmo, spacelab, and superhero. See https://bootswatch.com for current theme names.)
+</pre>
+            <p>Here's an example of updated imports in <code>App.js</code> to use "slate" theme (using a create-react-app fresh project.)</p>
+            <pre>
+import React from 'react';
+import logo from './logo.svg';
+import 'bootswatch/dist/slate/bootstrap.min.css'; // Added this :boom:
+import './App.css';
+
+function App() {
+...
+</pre>
+            </p>
+            <h4>CDN</h4>
             <p>You can also hotlink the themes via CDN at <a href="http://www.bootstrapcdn.com/bootswatch/">BootstrapCDN</a>.</p>
+            <h4>Sass</h4>
+            <p>If you're using Sass in your project, you can import the <code>_variables.scss</code> and <code>_bootswatch.scss</code> files for a given theme. This method allows you to override theme variables. Make sure to import Bootstrap's <code>bootstrap.scss</code> in between <code>_variables.scss</code> and <code>_bootswatch.scss</code>!</p>
+            <pre>
+// Your variable overrides can go here, e.g.:
+// $h1-font-size: 3rem;
+
+@import "~bootswatch/dist/[theme]/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/[theme]/bootswatch";
+</pre>
           </div>
         </div>
 
@@ -154,11 +180,12 @@
           <div class="col-lg-9">
 
             <h1 id="tools">Tools</h1>
-            <p><a href="http://glyphsearch.com/" target="_blank">GlyphSearch</a> is a tool for searching icons from Glyphicons, Font Awesome, and other popular icon font libraries.</p>
-            <p><a href="http://fontcdn.org/" target="_blank">FontCDN</a> is a tool for searching web fonts from Google Fonts.</p>
+            <p><a href="https://glyphsearch.com/" target="_blank">GlyphSearch</a> is a tool for searching icons from Glyphicons, Font Awesome, and other popular icon font libraries.</p>
+            <p><a href="https://thomaspark.co/projects/fontcdn/" target="_blank">FontCDN</a> is a tool for searching web fonts from Google Fonts.</p>
+            <p><a href="https://codepip.com" target="_blank">Codepip</a> has coding games for learning HTML, CSS, and JavaScript.</p>
 
             <h1 id="donate">Donate</h1>
-            <p>Donations are gratefully accepted via <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=F22JEM3Q78JC2">PayPal</a> and Bitcoin at <a href="bitcoin:1EMqwwjqJrfyoPqmxNM7buzU6DmySZnHBK">1EMqwwjqJrfyoPqmxNM7buzU6DmySZnHBK</a>.</p>
+            <p>Donations are gratefully accepted via <a href="https://github.com/sponsors/thomaspark/">GitHub</a> and <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PU2DH4BMF9MWS&source=url">PayPal</a>.</p>
 
         </div>
       </div>
@@ -172,16 +199,16 @@
 
             <ul class="list-unstyled">
               <li class="float-lg-right"><a href="#top">Back to top</a></li>
-              <li><a href="http://blog.bootswatch.com" onclick="pageTracker._link(this.href); return false;">Blog</a></li>
-              <li><a href="http://feeds.feedburner.com/bootswatch">RSS</a></li>
+              <li><a href="https://blog.bootswatch.com" onclick="pageTracker._link(this.href); return false;">Blog</a></li>
+              <li><a href="https://blog.bootswatch.com/rss/">RSS</a></li>
               <li><a href="https://twitter.com/bootswatch">Twitter</a></li>
               <li><a href="https://github.com/thomaspark/bootswatch/">GitHub</a></li>
               <li><a href="../help/#api">API</a></li>
               <li><a href="../help/#donate">Donate</a></li>
             </ul>
-            <p>Made by <a href="http://thomaspark.co">Thomas Park</a>.</p>
+            <p>Made by <a href="https://thomaspark.co">Thomas Park</a>.</p>
             <p>Code released under the <a href="https://github.com/thomaspark/bootswatch/blob/master/LICENSE">MIT License</a>.</p>
-            <p>Based on <a href="http://getbootstrap.com" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fontawesome.io/" rel="nofollow">Font Awesome</a>. Web fonts from <a href="https://fonts.google.com/" rel="nofollow">Google</a>.</p>
+            <p>Based on <a href="https://getbootstrap.com" rel="nofollow">Bootstrap</a>. Icons from <a href="https://fontawesome.com/" rel="nofollow">Font Awesome</a>. Web fonts from <a href="https://fonts.google.com/" rel="nofollow">Google</a>.</p>
 
           </div>
         </div>

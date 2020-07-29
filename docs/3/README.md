@@ -3,7 +3,7 @@ Bootswatch
 
 [![Bootswatch Logo](./assets/img/logo-dark.png)](http://bootswatch.com)
 
-Bootswatch is a collection of open source themes for [Bootstrap](http://getbootstrap.com/). Check it out at [bootswatch.com](http://bootswatch.com).
+Bootswatch is a collection of open source themes for [Bootstrap](https://getbootstrap.com/). Check it out at [bootswatch.com](http://bootswatch.com).
 
 Usage
 -----
@@ -36,7 +36,7 @@ Customization
 ------
 Bootswatch is open source and you’re welcome to modify the themes.
 
-Each theme consists of two LESS files. `variables.less`, which is included by default in Bootstrap, allows you to customize [these settings](http://getbootstrap.com/customize/#less-variables). `bootswatch.less` introduces more extensive structural changes.
+Each theme consists of two LESS files. `variables.less`, which is included by default in Bootstrap, allows you to customize [these settings](https://getbootstrap.com/customize/#less-variables). `bootswatch.less` introduces more extensive structural changes.
 
 These files are also available in SASS.
 
@@ -55,7 +55,7 @@ It's through your contributions that Bootswatch will continue to improve. You ca
 
 **Documentation:** If you'd like to fix a typo or beef up the docs, you can fork the project, make your changes, and submit a pull request.
 
-**Code:** Make a fix and submit it as a pull request. When making changes, it's important to keep the CSS, LESS and SASS versions in sync. To do this, be sure to edit the LESS source files for the particular theme, then run the  tasks `grunt swatch` and `grunt convert_less` to build the CSS and SASS.
+**Code:** Make a fix and submit it as a pull request. When making changes, it's important to keep the CSS, LESS and SASS versions in sync. To do this, be sure to edit the LESS source files for the particular theme, then run the  tasks `grunt swatch` and `grunt:convert_less` to build the CSS and LESS.
 
 **Donation:** Donations are gratefully accepted via [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=F22JEM3Q78JC2) and [Gratipay](https://gratipay.com/bootswatch/).
 
@@ -64,7 +64,7 @@ Author
 Thomas Park
 
 + http://github.com/thomaspark
-+ http://thomaspark.co
++ https://thomaspark.co
 
 Thanks
 ------
@@ -79,6 +79,6 @@ Thanks
 
 Copyright and License
 ----
-Copyright 2014-2016 Thomas Park
+Copyright 2014-2018 Thomas Park
 
 Code released under the MIT License.
